@@ -32,18 +32,16 @@ namespace Algorithm
                     }
                     comparison.AgeDifference = comparison.Youngest.BirthDate - comparison.Oldest.BirthDate;
                     comparisonList.Add(comparison); 
-                                            //mike(Younger) & greg(Older) (ageDiff = 27)
-                                            //mike(Older) & Sarah(Younger) (ageDiff = 3)
-                                            //sarah(Younger) & sue(Older) (ageDiff = 32)
+                                            
                 }
             }
 
-            if(comparisonList.Count < 1) //if there is no one in the list
+            if(comparisonList.Count < 1) 
             {
-                return new Comparison(); //create a new instance of age
+                return new Comparison(); 
             }
 
-            Comparison answer = comparisonList[0]; //mike(Younger) & greg(Older) (ageDiff = 27)
+            Comparison answer = comparisonList[0]; 
             foreach(var result in comparisonList)
             {
                 switch(ft)
@@ -51,14 +49,14 @@ namespace Algorithm
                     case FT.One:
                         if(result.AgeDifference < answer.AgeDifference)
                         {
-                            answer = result; //mike(Older) & Sarah(Younger) (ageDiff = 3)
+                            answer = result; 
                         }
                         break;
 
                     case FT.Two:
                         if(result.AgeDifference > answer.AgeDifference)
                         {
-                            answer = result; //sarah(Younger) & sue(Older) (ageDiff = 32)
+                            answer = result;
                         }
                         break;
                 }
