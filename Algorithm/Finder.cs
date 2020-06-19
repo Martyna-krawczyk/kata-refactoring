@@ -22,15 +22,15 @@ namespace Algorithm
                     var comparison = new Comparison();
                     if(_person[i].BirthDate < _person[j].BirthDate)
                     {
-                        comparison.Younger = _person[i];
-                        comparison.Older = _person[j];
+                        comparison.Oldest = _person[i];
+                        comparison.Youngest = _person[j];
                     }
                     else
                     {
-                        comparison.Younger = _person[j];
-                        comparison.Older = _person[i];
+                        comparison.Oldest = _person[j];
+                        comparison.Youngest = _person[i];
                     }
-                    comparison.AgeDifference = comparison.Older.BirthDate - comparison.Younger.BirthDate;
+                    comparison.AgeDifference = comparison.Youngest.BirthDate - comparison.Oldest.BirthDate;
                     comparisonList.Add(comparison); 
                                             //mike(Younger) & greg(Older) (ageDiff = 27)
                                             //mike(Older) & Sarah(Younger) (ageDiff = 3)

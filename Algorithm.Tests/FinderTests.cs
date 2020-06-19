@@ -15,8 +15,8 @@ namespace Algorithm.Test
 
             var result = finder.Find(FT.One);
 
-            Assert.Null(result.Younger);
-            Assert.Null(result.Older);
+            Assert.Null(result.Oldest);
+            Assert.Null(result.Youngest);
         }
 
         [Fact]
@@ -27,8 +27,8 @@ namespace Algorithm.Test
 
             var result = finder.Find(FT.One);
 
-            Assert.Null(result.Younger);
-            Assert.Null(result.Older);
+            Assert.Null(result.Oldest);
+            Assert.Null(result.Youngest);
         }
 
         [Fact]
@@ -39,8 +39,8 @@ namespace Algorithm.Test
 
             var result = finder.Find(FT.One);
 
-            Assert.Same(sue, result.Younger);
-            Assert.Same(greg, result.Older);
+            Assert.Same(sue, result.Oldest);
+            Assert.Same(greg, result.Youngest);
         }
 
         [Fact]
@@ -51,8 +51,8 @@ namespace Algorithm.Test
 
             var result = finder.Find(FT.Two);
 
-            Assert.Same(greg, result.Younger);
-            Assert.Same(mike, result.Older);
+            Assert.Same(greg, result.Oldest);
+            Assert.Same(mike, result.Youngest);
         }
 
         [Fact]
@@ -63,8 +63,8 @@ namespace Algorithm.Test
 
             var result = finder.Find(FT.Two);
 
-            Assert.Same(sue, result.Younger);
-            Assert.Same(sarah, result.Older);
+            Assert.Same(sue, result.Oldest);
+            Assert.Same(sarah, result.Youngest);
         }
 
         [Fact]
@@ -75,13 +75,27 @@ namespace Algorithm.Test
 
             var result = finder.Find(FT.One);
 
-            Assert.Same(sue, result.Younger);
-            Assert.Same(greg, result.Older);
+            Assert.Same(sue, result.Oldest);
+            Assert.Same(greg, result.Youngest);
+        }
+
+        [Fact]
+        public void Mike_Is_Younger_Than_Greg()
+        {
+            var list = new List<Person>(){greg, mike};
+            var finder = new Finder(list);
+
+            var result = finder.Find(FT.One);
+            
+            Assert.Same(greg, result.Oldest);
+            Assert.Same(mike, result.Youngest);
         }
 
         Person sue = new Person() {Name = "Sue", BirthDate = new DateTime(1950, 1, 1)};
         Person greg = new Person() {Name = "Greg", BirthDate = new DateTime(1952, 6, 1)};
         Person sarah = new Person() { Name = "Sarah", BirthDate = new DateTime(1982, 1, 1) };
         Person mike = new Person() { Name = "Mike", BirthDate = new DateTime(1979, 1, 1) };
+        
+        
     }
 }
