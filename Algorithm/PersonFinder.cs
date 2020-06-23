@@ -2,21 +2,21 @@ using System.Collections.Generic;
 
 namespace Algorithm
 {
-    public class Finder
+    public class PersonFinder
     {
         private readonly List<Person> _person;
         private readonly List<Comparison> _comparisonList;
 
-        public Finder(List<Person> person)
+        public PersonFinder(List<Person> person)
         {
-            _person = person;
+            _person = person; 
            _comparisonList = new List<Comparison>();
         }
 
         public Comparison Find(AgeGap ageGap)
         {
             
-            SortAndComparePeopleByBirthDate();
+            SortPeopleByBirthDate();
 
             if(_comparisonList.Count < 1) 
             {
@@ -47,7 +47,7 @@ namespace Algorithm
             return answer;
         }
 
-        private void SortAndComparePeopleByBirthDate()
+        private void SortPeopleByBirthDate()
         {
             for (var i = 0; i < _person.Count - 1; i++)
             {
@@ -64,11 +64,15 @@ namespace Algorithm
                         comparison.Oldest = _person[j];
                         comparison.Youngest = _person[i];
                     }
-
-                    comparison.AgeDifference = comparison.Youngest.BirthDate - comparison.Oldest.BirthDate;
-                    _comparisonList.Add(comparison);
+                    GetAgeDifference(comparison);
                 }
             }
+        }
+
+        private void GetAgeDifference(Comparison comparison)
+        {
+            comparison.AgeDifference = comparison.Youngest.BirthDate - comparison.Oldest.BirthDate;
+            _comparisonList.Add(comparison);
         }
     }
 }

@@ -11,7 +11,7 @@ namespace Algorithm.Test
         public void Returns_Empty_Results_When_Given_Empty_List()
         {
             var list = new List<Person>();
-            var finder = new Finder(list);
+            var finder = new PersonFinder(list);
         
             var result = finder.Find(AgeGap.Smallest);
         
@@ -23,7 +23,7 @@ namespace Algorithm.Test
         public void Returns_Empty_Results_When_Given_One_Person()
         {
             var list = new List<Person>() { sue };
-            var finder = new Finder(list);
+            var finder = new PersonFinder(list);
         
             var result = finder.Find(AgeGap.Smallest);
         
@@ -35,7 +35,7 @@ namespace Algorithm.Test
         public void Returns_Closest_Two_For_Two_People()
         {
             var list = new List<Person>() { sue, greg };
-            var finder = new Finder(list);
+            var finder = new PersonFinder(list);
         
             var result = finder.Find(AgeGap.Largest);
         
@@ -47,7 +47,7 @@ namespace Algorithm.Test
         public void Returns_Furthest_Two_For_Two_People()
         {
             var list = new List<Person>() { greg, mike };
-            var finder = new Finder(list);
+            var finder = new PersonFinder(list);
         
             var result = finder.Find(AgeGap.Smallest);
         
@@ -59,7 +59,7 @@ namespace Algorithm.Test
         public void Returns_Furthest_Two_For_Four_People()
         {
             var list = new List<Person>() { greg, mike, sarah, sue };
-            var finder = new Finder(list);
+            var finder = new PersonFinder(list);
         
             var result = finder.Find(AgeGap.Largest);
         
@@ -72,7 +72,7 @@ namespace Algorithm.Test
         public void Returns_Closest_Two_For_Four_People()
         {
             var list = new List<Person>() { mike, greg, sue, sarah };
-            var finder = new Finder(list);
+            var finder = new PersonFinder(list);
         
             var result = finder.Find(AgeGap.Smallest);
         
@@ -84,7 +84,7 @@ namespace Algorithm.Test
         public void TestingEnumOneBehaviour()
         {
             var list = new List<Person>() { greg, mike, sarah, sue };
-            var finder = new Finder(list);
+            var finder = new PersonFinder(list);
         
             var result = finder.Find(AgeGap.Smallest);
         
@@ -97,7 +97,7 @@ namespace Algorithm.Test
         public void Mike_Is_Younger_Than_Greg()
         {
             var list = new List<Person>(){greg, mike};
-            var finder = new Finder(list);
+            var finder = new PersonFinder(list);
         
             var result = finder.Find(AgeGap.Smallest);
             
