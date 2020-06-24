@@ -43,7 +43,6 @@ namespace Algorithm
                         break;
                 }
             }
-            
             return answer;
         }
 
@@ -54,25 +53,37 @@ namespace Algorithm
                 for (var j = i + 1; j < _person.Count; j++)
                 {
                     var comparison = new Comparison();
-                    if (_person[i].BirthDate < _person[j].BirthDate)
-                    {
-                        comparison.Oldest = _person[i];
-                        comparison.Youngest = _person[j];
-                    }
-                    else
-                    {
-                        comparison.Oldest = _person[j];
-                        comparison.Youngest = _person[i];
-                    }
-                    GetAgeDifference(comparison);
+                    _comparisonList.Add(comparison);
+                    AssignOldestYoungest(i, j, comparison);
+                    SetAgeDifference();
+                   
                 }
             }
         }
 
-        private void GetAgeDifference(Comparison comparison)
+        private void AssignOldestYoungest(int i, int j, Comparison comparison)
         {
-            comparison.AgeDifference = comparison.Youngest.BirthDate - comparison.Oldest.BirthDate;
-            _comparisonList.Add(comparison);
+            
+            if (_person[i].BirthDate < _person[j].BirthDate)
+            {
+                comparison.Oldest = _person[i];
+                comparison.Youngest = _person[j];
+            }
+            else
+            {
+                comparison.Oldest = _person[j];
+                comparison.Youngest = _person[i];
+            }
+        }
+
+        private void SetAgeDifference()
+        {
+            //comparison.AgeDifference = comparison.Youngest.BirthDate - comparison.Oldest.BirthDate;
+            foreach (var comparison in _comparisonList)
+            {
+                comparison.AgeDifference = comparison.Youngest.BirthDate - comparison.Oldest.BirthDate;
+            }
+            //_comparisonList.Add(comparison);
         }
     }
 }
