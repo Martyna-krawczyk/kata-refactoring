@@ -2,7 +2,7 @@ using System;
 
 namespace Algorithm
 {
-    public class Comparison
+    public class AgeComparison
     {
         public Person Oldest { get; set; }
         public Person Youngest { get; set; }
