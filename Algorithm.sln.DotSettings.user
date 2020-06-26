@@ -9,12 +9,22 @@
     &lt;TestId&gt;xUnit::6DE19B64-5DF9-4F1E-A1E8-ABEB43707B45::.NETCoreApp,Version=v3.1::Algorithm.Test.FinderTests&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=646f9fa5_002D8425_002D47a3_002Da940_002Da035a2cdbeb2/@EntryIndexedValue">&lt;SessionState ContinuousTestingIsOn="False" ContinuousTestingMode="0" FrameworkVersion="{x:Null}" IsLocked="False" Name="FinderTests #3" PlatformMonoPreference="{x:Null}" PlatformType="{x:Null}" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::6DE19B64-5DF9-4F1E-A1E8-ABEB43707B45::.NETCoreApp,Version=v3.1::Algorithm.Test.FinderTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7272cf73_002Dbafc_002D402a_002Db190_002De59ae0b9de87/@EntryIndexedValue">&lt;SessionState ContinuousTestingIsOn="False" ContinuousTestingMode="0" FrameworkVersion="{x:Null}" IsLocked="False" Name="Mike_Is_Younger_Than_Greg" PlatformMonoPreference="{x:Null}" PlatformType="{x:Null}" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::6DE19B64-5DF9-4F1E-A1E8-ABEB43707B45::.NETCoreApp,Version=v3.1::Algorithm.Test.FinderTests&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7ecb0cf7_002D2051_002D4020_002Db5e0_002Dbe54094cb05f/@EntryIndexedValue">&lt;SessionState ContinuousTestingIsOn="False" ContinuousTestingMode="0" FrameworkVersion="{x:Null}" IsLocked="False" Name="Mike_Is_Younger_Than_Greg #2" PlatformMonoPreference="{x:Null}" PlatformType="{x:Null}" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::6DE19B64-5DF9-4F1E-A1E8-ABEB43707B45::.NETCoreApp,Version=v3.1::Algorithm.Test.FinderTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b24424c8_002Dd517_002D49af_002Db28c_002D388d74c57433/@EntryIndexedValue">&lt;SessionState ContinuousTestingIsOn="False" ContinuousTestingMode="0" FrameworkVersion="{x:Null}" IsLocked="False" Name="FinderTests #2" PlatformMonoPreference="{x:Null}" PlatformType="{x:Null}" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::6DE19B64-5DF9-4F1E-A1E8-ABEB43707B45::.NETCoreApp,Version=v3.1::Algorithm.Test.FinderTests&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
