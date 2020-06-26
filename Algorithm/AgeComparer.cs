@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Algorithm
 {
@@ -6,11 +7,13 @@ namespace Algorithm
     {
         private readonly List<Person> _people;
         private readonly List<AgeComparison> _ageComparisonList;
+        
 
         public AgeComparer(List<Person> people)
         {
             _people = people; 
            _ageComparisonList = new List<AgeComparison>();
+          
         }
 
         public AgeComparison GetAgeComparisonResult(AgeGap ageGap)
@@ -22,31 +25,27 @@ namespace Algorithm
 
         private AgeComparison GetSmallestOrLargestAgeGap(AgeGap ageGap)
         {
-            AgeComparison answer = _ageComparisonList[0];
-            foreach (var result in _ageComparisonList)
-            {
-                switch (ageGap)
-                {
-                    case AgeGap.Smallest:
-                        if (result.AgeDifference < answer.AgeDifference)
-                        {
-                            answer = result;
-                        }
-
-                        break;
-
-                    case AgeGap.Largest:
-                        if (result.AgeDifference > answer.AgeDifference)
-                        {
-                            answer = result;
-                        }
-
-                        break;
-                }
-            }
-
-            return answer;
+            var result = ageGap == AgeGap.Smallest ? GetSmallestAgeGap() : GetLargestAgeGap();
+            return result;
         }
+
+        private AgeComparison GetSmallestAgeGap()
+        {
+            var comparison = _ageComparisonList.Min((x => x.AgeDifference));
+            var result = _ageComparisonList.Find(x => x.AgeDifference == comparison);
+            return result;
+        }
+        
+        private AgeComparison GetLargestAgeGap()
+        {
+            var comparison = _ageComparisonList.Max((x => x.AgeDifference));
+            var result = _ageComparisonList.Find(x => x.AgeDifference == comparison);
+            return result;
+        }
+        
+        
+
+        
 
         private void SortPeopleByBirthDate()
         {
