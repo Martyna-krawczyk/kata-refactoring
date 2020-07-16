@@ -14,6 +14,11 @@
     &lt;TestId&gt;xUnit::6DE19B64-5DF9-4F1E-A1E8-ABEB43707B45::.NETCoreApp,Version=v3.1::Algorithm.Test.FinderTests&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=6d3746f0_002D77a6_002D4367_002Da7da_002Dec50180c85ab/@EntryIndexedValue">&lt;SessionState ContinuousTestingIsOn="False" ContinuousTestingMode="0" FrameworkVersion="{x:Null}" IsLocked="False" Name="FinderTests #4" PlatformMonoPreference="{x:Null}" PlatformType="{x:Null}" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::6DE19B64-5DF9-4F1E-A1E8-ABEB43707B45::.NETCoreApp,Version=v3.1::Algorithm.Test.FinderTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7272cf73_002Dbafc_002D402a_002Db190_002De59ae0b9de87/@EntryIndexedValue">&lt;SessionState ContinuousTestingIsOn="False" ContinuousTestingMode="0" FrameworkVersion="{x:Null}" IsLocked="False" Name="Mike_Is_Younger_Than_Greg" PlatformMonoPreference="{x:Null}" PlatformType="{x:Null}" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::6DE19B64-5DF9-4F1E-A1E8-ABEB43707B45::.NETCoreApp,Version=v3.1::Algorithm.Test.FinderTests&lt;/TestId&gt;
