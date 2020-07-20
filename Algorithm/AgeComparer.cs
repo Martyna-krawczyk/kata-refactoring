@@ -60,28 +60,24 @@ namespace Algorithm
         
         private AgeComparison GetSmallestOrLargestAgeGap(AgeGap ageGap)
         {
-            var result = ageGap == AgeGap.Smallest ? GetSmallestAgeGap() : GetLargestAgeGap();
-            return result;
+            return ageGap == AgeGap.Smallest ? GetSmallestAgeGap() : GetLargestAgeGap();
         }
 
         private AgeComparison GetSmallestAgeGap()
         {
             var smallestComparison = _ageComparisonList.Min((x => x.AgeDifference));
-            var result = FindAgeComparison(smallestComparison);
-            return result;
+            return FindAgeComparison(smallestComparison);
         }
 
         private AgeComparison GetLargestAgeGap()
         {
             var largestComparison = _ageComparisonList.Max((x => x.AgeDifference));
-            var result = FindAgeComparison(largestComparison);
-            return result;
+            return FindAgeComparison(largestComparison);
         }
         
         private AgeComparison FindAgeComparison(TimeSpan comparison)
         {
             return _ageComparisonList.Find(x => x.AgeDifference == comparison);
         }
-        
     }
 }

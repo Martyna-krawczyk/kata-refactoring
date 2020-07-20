@@ -6,7 +6,6 @@ namespace Algorithm
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
         }
     }
 }
